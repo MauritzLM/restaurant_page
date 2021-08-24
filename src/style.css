@@ -1,0 +1,15 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav div {
+    border: 1px solid;
+    padding: 1em;
+}
+
