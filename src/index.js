@@ -1,7 +1,9 @@
 import './style.css';
-import main_image from './image1.jpg';
+import main_image from './img/image1.jpg';
+import water_image from './img/water.jpg';
 import loadMenu from './menu';
 import loadHome from './home';
+import loadContact from './contact';
 
 
 const homeTab = document.getElementById('home');
@@ -26,6 +28,11 @@ homeTab.addEventListener('click', (e) => {
     removeAllChildNodes(content);
     loadHome(content);
 });
+
+contactTab.addEventListener('click', (e) => {
+    removeAllChildNodes(content);
+    loadContact(content);
+})
 
 
 

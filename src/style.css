@@ -1,15 +1,94 @@
 body {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
-nav {
+#content {
+   position: relative;    
+   max-width: 960px;
+   padding: 1.5em;
+   margin: 0 auto;
+   border: solid 2px #52504e;
+   
+
+}
+
+
+
+.info-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
-nav div {
-    border: 1px solid;
-    padding: 1em;
+
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #dedcd7;
 }
 
+nav div {
+    padding: .75em;
+    font-size: 1.25rem;
+  
+}
+
+.nav-home {
+    margin-right: 2.5em;
+}
+
+.nav-contact {
+    margin-left: 2.5em;
+}
+
+.nav-home:hover, .nav-menu:hover, .nav-contact:hover {
+    cursor: pointer;
+    background-color: #52504e;
+    color: #dedcd7;;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    
+}
+
+
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+    text-align: start;
+}
+
+
+.days-container {
+    text-align: left;
+    padding-left: 380px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-div {
+   border: 1px solid #52504e;
+   border-radius: 10px;
+   width: 40%;
+   
+}
+
+.item-title {
+    text-align: left;
+    margin-left: 40px;
+}
+
+/*.img-div {
+    background-image: url('./img/water.jpg');
+} */
