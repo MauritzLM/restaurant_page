@@ -53,6 +53,11 @@ nav div {
     color: #dedcd7;;
 }
 
+.selected-nav {
+    background-color: #52504e;
+    color: #dedcd7;
+}
+
 .title {
     font-size: 2rem;
     margin-bottom: 1em;
@@ -75,18 +80,26 @@ nav div {
 .item-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .item-div {
    border: 1px solid #52504e;
    border-radius: 10px;
    width: 40%;
+   margin-top: 1.5em;
+   margin-bottom: 1.5em;
    
 }
 
 .item-title {
     text-align: left;
     margin-left: 40px;
+}
+
+.item-price {
+    text-align: right;
+    margin-right: 40px;
 }
 
 /*.img-div {

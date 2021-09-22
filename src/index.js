@@ -18,19 +18,27 @@ function removeAllChildNodes(parent) {
 };
 
 menuTab.addEventListener('click', (e) => {
-    console.log(e.target);
     removeAllChildNodes(content);
+    menuTab.classList.add('selected-nav');
+    homeTab.classList.remove('selected-nav');
+    contactTab.classList.remove('selected-nav');
     loadMenu(content);
 
 });
 
 homeTab.addEventListener('click', (e) => {
     removeAllChildNodes(content);
+    homeTab.classList.add('selected-nav');
+    menuTab.classList.remove('selected-nav');
+    contactTab.classList.remove('selected-nav');
     loadHome(content);
 });
 
 contactTab.addEventListener('click', (e) => {
     removeAllChildNodes(content);
+    contactTab.classList.add('selected-nav');
+    menuTab.classList.remove('selected-nav');
+    homeTab.classList.remove('selected-nav');
     loadContact(content);
 })
 
